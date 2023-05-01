@@ -1,0 +1,45 @@
+*, ::before, ::after {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #F4F4F4;
+  --primary-color-variant: rgb(255,255,255, 0.5);
+
+  --secondary-color: #111;
+  --header-height : 10vh;
+}
+
+body {
+   background-color: var(--primary-color);
+   color: var(--secondary-color);
+}
+
+main {
+  min-height: 80vh;
+  padding: calc(var(--header-height) + 1vh) 3vw 5vh 3vw;
+
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: inherit;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
