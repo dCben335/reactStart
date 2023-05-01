@@ -22,8 +22,8 @@ body {
 }
 
 main {
-  min-height: 80vh;
-  padding: calc(var(--header-height) + 1vh) 3vw 5vh 3vw;
+  min-height: 100vh;
+  padding: calc(var(--header-height) + 5vh) 3vw 5vh 3vw;
 
 }
 

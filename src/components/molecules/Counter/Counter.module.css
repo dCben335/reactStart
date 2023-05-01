@@ -1,0 +1,14 @@
+.container {
+    margin: 5vh auto;
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    width: fit-content;
+
+}
+
+.container button {
+    border: 1px solid black;
+    padding: 1rem 3rem;
+    border-radius: 100vmax;
+}

@@ -23,14 +23,18 @@
     position: fixed;
     top: var(--header-height);
     right: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
     display: flex;
     align-items: center;
-    flex-direction: column; 
-    gap: 1rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 1.5rem;
     padding: 1rem 2rem;
     background-color: var(--primary-color-variant);    
     backdrop-filter: blur(5px);
-    box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.5);    z-index: 100;
+    box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.5);
+    z-index: 100;
     text-transform: capitalize;
     transform: translateX(100vw);
     transition: transform .3s ease-in-out
@@ -38,5 +42,21 @@
 
 .header ul.opened {
     transform: translateX(0);
+}
+
+@media screen and (min-width: 1000px) {
+    .header ul  {
+        position: initial;
+        height: auto;
+        background: transparent;
+        transform: initial;
+        flex-direction: row;
+        box-shadow: initial;
+        backdrop-filter: initial;
+    }
+
+    .header nav > :last-child {
+        display: none;
+    }
 }
 
