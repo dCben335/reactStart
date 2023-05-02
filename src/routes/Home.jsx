@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import Counter from "../components/atoms/Buttons/Counter/Counter.jsx"
+import Counter from "../components/molecules/Counter/Counter.jsx"
 
 export default function Home() {
 

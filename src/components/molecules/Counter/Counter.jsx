@@ -1,21 +1,28 @@
 import { useState } from "react";
 import styles from './Counter.module.css';
+import Button from '../../atoms/Buttons/Button/Button.jsx'
 
 export default function Counter(){
     const [count, setCount] = useState(0);
 
-    function increaseCount() {
+    const increaseCount =  () => {
         setCount(count + 1);
     }
-    function decreaseCount() {
+    const decreaseCount = () => {
         setCount(count - 1);
     }
 
     return (
         <div className={styles.container}>
-            <button onClick={() => increaseCount()}>Increase</button>
+            <Button 
+                text="increase"
+                clicked={increaseCount}
+            />
             <p>{count}</p>
-            <button onClick={() => decreaseCount()}>Decrease</button>
+            <Button 
+                text="decrease"
+                clicked={decreaseCount}
+            />
         </div>
     )
 }
